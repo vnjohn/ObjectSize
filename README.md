@@ -36,12 +36,10 @@ public class SizeOfAnObject {
 ```
 ## 修改启动参数
 可选参数👇👇
-+ 代表压缩普通对象,- 代表不进行压缩,按道理来说引用类型都是占用 8 字节的
++ + 代表压缩普通对象,- 代表不进行压缩,按道理来说引用类型都是占用 8 字节的
   -XX:-UseCompressedOops
-+ 代表 classPointer 只占用 4 字节进行压缩,- 代表不进行压缩仍为 8 字节
-  -XX:+UseCompressedClassPointers
-
-引入指定目录jar包文件
+  + 代表 classPointer 只占用 4 字节进行压缩,- 代表不进行压缩仍为 8 字节
+    -XX:+UseCompressedClassPointers : 引入指定目录jar包文件
 ```java
 -javaagent:E:\study\ObjectSize\out\artifacts\ObjectSize_jar\ObjectSize.jar
 ```
